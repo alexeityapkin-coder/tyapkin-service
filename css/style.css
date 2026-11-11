@@ -299,6 +299,209 @@ h2 span {
   overflow: hidden;
 }
 
+/* =========================================
+   НОВЫЕ ТЕМНЫЕ КАРТОЧКИ (ШАГИ РАБОТЫ)
+   ========================================= */
+
+.my-dark-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 380px;
+  background: #0b162a; /* Темный фон карточки */
+  border: 1px solid #1a2b45;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.my-dark-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  border-color: #3a5a8a;
+}
+
+/* Верхняя часть с картинкой */
+.my-card-image {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.my-card-image i {
+  font-size: 4.5rem;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.my-dark-card:hover .my-card-image i {
+  transform: scale(1.15) rotate(3deg);
+}
+
+/* Градиенты для фона картинок */
+.img-blue { background: linear-gradient(135deg, #0a1c3a, #143a70); }
+.img-purple { background: linear-gradient(135deg, #1c0d33, #3d1c6b); }
+.img-green { background: linear-gradient(135deg, #0b241c, #145c40); }
+.img-orange { background: linear-gradient(135deg, #2e1507, #6b2c14); }
+
+/* Цвета самих иконок */
+.text-cyan { color: #48c6e8; }
+.text-pink { color: #d946ef; }
+.text-lime { color: #34d399; }
+.text-yellow { color: #fbbf24; }
+
+/* Нижняя часть с текстом */
+.my-card-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+/* Полупрозрачная цифра на фоне */
+.my-card-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.my-card-body h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff; /* Белый заголовок */
+  margin: 0 0 12px 0;
+  padding-right: 40px;
+}
+
+.my-card-body p {
+  font-size: 0.92rem;
+  color: #9bb0c9; /* Светло-серый текст */
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* =========================================
+   СТИЛИ ДЛЯ СТРАНИЦЫ ЦЕН (prices.html)
+   ========================================= */
+
+/* Декоративная картинка в шапке */
+/* Декоративная картинка в шапке */
+.price-hero-img {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price-hero-img i {
+  position: absolute;
+  color: var(--blue); /* Одинаковый яркий синий цвет для обеих иконок */
+  filter: drop-shadow(0 10px 20px rgba(40, 120, 240, 0.2)); /* Одинаковая легкая тень */
+}
+.price-hero-img .bi-cash-coin {
+  font-size: 8rem;
+  top: 10px;
+  left: 10%;
+  opacity: 0.85; /* Сделал чуть прозрачной, чтобы композиция смотрелась объемнее */
+}
+.price-hero-img .bi-laptop {
+  font-size: 6rem;
+  bottom: 20px;
+  right: 10%;
+  z-index: 2;
+}
+/* Таблица */
+.price-table {
+  --bs-table-bg: transparent;
+  --bs-table-hover-bg: #f8fbff;
+}
+.price-table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border-bottom: 2px solid #eef4fc;
+  padding-bottom: 15px;
+}
+.price-table tbody td {
+  padding: 18px 10px;
+  border-color: #f0f5fb;
+  font-size: 0.95rem;
+}
+.price-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+/* Карточки преимуществ */
+.tip-icon-wrap {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.bg-blue-soft { background: #eef6ff; }
+.bg-green-soft { background: #e8f9f1; }
+.bg-purple-soft { background: #f4edff; }
+
+.price-tip {
+  border: 1px solid #e5ebf3;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(22, 45, 74, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.price-tip:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(22, 45, 74, 0.08);
+}
+.price-tip h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+/* Блок с калькулятором (CTA) */
+.cta-calc {
+  background: linear-gradient(135deg, #f0f6ff, #ffffff);
+  border: 2px dashed #c8dcfb;
+  border-radius: 24px;
+  padding: 50px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-calc-icon {
+  font-size: 3.5rem;
+  color: var(--blue);
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.cta-calc h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.cta-calc p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
 .progress-line span {
   display: block;
   width: 78%;
