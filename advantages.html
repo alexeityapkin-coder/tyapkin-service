@@ -45,15 +45,29 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow dark">Почему выбирают нас</span>
-        <h1>Сервис, в котором <span>всё прозрачно</span></h1>
-        <p>Мы объясняем, что случилось с устройством, и не начинаем платный ремонт без согласования. Ниже — принципы, на которых строится наша работа.</p>
+    <main id="main">
+    <!-- Шапка с картинкой -->
+    <section class="page-hero position-relative overflow-hidden">
+      <div class="container position-relative z-1">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="eyebrow dark">Почему выбирают нас</span>
+            <h1>Сервис, в котором <span>всё прозрачно</span></h1>
+            <p class="mb-0">Мы объясняем, что случилось с устройством, и не начинаем платный ремонт без согласования. Ниже — принципы, на которых строится наша работа.</p>
+          </div>
+          <div class="col-lg-4 d-none d-lg-block text-center">
+            <!-- Декоративная картинка -->
+            <div class="adv-hero-img">
+              <i class="bi bi-shield-check main-icon"></i>
+              <i class="bi bi-star-fill star-1"></i>
+              <i class="bi bi-star-fill star-2"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Преимущества -->
     <section class="section pt-0">
       <div class="container">
         <div class="row g-4">
@@ -121,6 +135,7 @@
       </div>
     </section>
 
+    <!-- Принципы (с цветными иконками) -->
     <section class="section section-soft">
       <div class="container">
         <div class="section-heading text-center">
@@ -129,37 +144,92 @@
         </div>
         <div class="row g-4 mt-3">
           <div class="col-md-6 col-lg-3">
-            <div class="benefit h-100">
-              <i class="bi bi-eye"></i>
+            <div class="benefit h-100 text-center p-4">
+              <div class="benefit-icon-wrap bg-blue-soft mx-auto mb-3">
+                <i class="bi bi-eye text-primary"></i>
+              </div>
               <h3>Прозрачность</h3>
-              <p>Объясняем каждый шаг и не скрываем деталей ремонта.</p>
+              <p class="mb-0">Объясняем каждый шаг и не скрываем деталей ремонта.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="benefit h-100">
-              <i class="bi bi-hand-thumbs-up"></i>
+            <div class="benefit h-100 text-center p-4">
+              <div class="benefit-icon-wrap bg-green-soft mx-auto mb-3">
+                <i class="bi bi-hand-thumbs-up text-success"></i>
+              </div>
               <h3>Честность</h3>
-              <p>Рекомендуем только те работы, которые действительно нужны.</p>
+              <p class="mb-0">Рекомендуем только те работы, которые действительно нужны.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="benefit h-100">
-              <i class="bi bi-lightning-charge"></i>
+            <div class="benefit h-100 text-center p-4">
+              <div class="benefit-icon-wrap bg-orange-soft mx-auto mb-3">
+                <i class="bi bi-lightning-charge text-warning"></i>
+              </div>
               <h3>Оперативность</h3>
-              <p>Стараемся решать задачи быстро, не в ущерб качеству.</p>
+              <p class="mb-0">Стараемся решать задачи быстро, не в ущерб качеству.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="benefit h-100">
-              <i class="bi bi-heart"></i>
+            <div class="benefit h-100 text-center p-4">
+              <div class="benefit-icon-wrap bg-purple-soft mx-auto mb-3">
+                <i class="bi bi-heart" style="color: #8b5cf6;"></i>
+              </div>
               <h3>Внимание</h3>
-              <p>Относимся к каждой технике так, как к своей собственной.</p>
+              <p class="mb-0">Относимся к каждой технике так, как к своей собственной.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- НОВАЯ СЕКЦИЯ: Галерея / Фото работы -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading text-center mb-5">
+          <span class="eyebrow dark">Наш сервис</span>
+          <h2>Атмосфера <span>качественного ремонта</span></h2>
+          <p>Мы создали комфортные условия для диагностики и ремонта любой сложности.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img bg-gradient-blue">
+                <i class="bi bi-tools"></i>
+              </div>
+              <div class="gallery-content">
+                <h3>Профессиональный инструмент</h3>
+                <p>Используем только качественное оборудование для точной диагностики.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img bg-gradient-purple">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div class="gallery-content">
+                <h3>Опытные мастера</h3>
+                <p>Наши инженеры имеют многолетний опыт работы с ноутбуками разных брендов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="gallery-card">
+              <div class="gallery-img bg-gradient-green">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <div class="gallery-content">
+                <h3>Довольные клиенты</h3>
+                <p>Более 1000 успешно отремонтированных устройств и положительных отзывов.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta-section">
       <div class="container">
         <div class="cta-panel">
