@@ -509,6 +509,109 @@ h2 span {
   background: #57c8ef;
 }
 
+/* =========================================
+   ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ advantages.html
+   ========================================= */
+
+/* Картинка в шапке */
+.adv-hero-img {
+  position: relative;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.adv-hero-img .main-icon {
+  font-size: 10rem;
+  color: var(--blue);
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 15px 25px rgba(40, 120, 240, 0.3));
+}
+.adv-hero-img .star-1 {
+  font-size: 2.5rem;
+  color: #fbbf24;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  filter: drop-shadow(0 5px 10px rgba(251, 191, 36, 0.4));
+}
+.adv-hero-img .star-2 {
+  font-size: 1.5rem;
+  color: #fbbf24;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  opacity: 0.7;
+}
+
+/* Круглые подложки для иконок в блоке принципов */
+.benefit-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+.bg-orange-soft { background: #fff4e6; }
+.benefit {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.benefit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(22, 45, 74, 0.08);
+}
+
+/* Карточки галереи */
+.gallery-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(22, 45, 74, 0.05);
+  transition: transform 0.3s;
+  height: 100%;
+}
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+.gallery-img {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-img i {
+  font-size: 4.5rem;
+  color: #fff;
+  opacity: 0.9;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+}
+.bg-gradient-blue { background: linear-gradient(135deg, #2878f0, #48c6e8); }
+.bg-gradient-purple { background: linear-gradient(135deg, #8b5cf6, #d946ef); }
+.bg-gradient-green { background: linear-gradient(135deg, #10b981, #34d399); }
+
+.gallery-content {
+  padding: 24px;
+}
+.gallery-content h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--navy);
+}
+.gallery-content p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
 .laptop-base {
   height: 14px;
   width: 430px;
